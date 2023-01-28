@@ -36,8 +36,8 @@ public class Ask implements Offer{
     @Override
     public String toString() {
         StringBuilder informationAsk = new StringBuilder();
-        informationAsk.append(this.getSize());
-        informationAsk.append(" "+this.getAsk());
+        informationAsk.append("\n\t\t" + this.size);
+        informationAsk.append("\t"+this.askValue);
 
         return informationAsk.toString();
     }

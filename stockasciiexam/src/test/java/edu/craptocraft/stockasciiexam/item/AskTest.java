@@ -11,6 +11,6 @@ public class AskTest {
     public void constructorAsk(){
         Ask ask= new Ask("13", 500);
         assertNotNull(ask);
-        assertEquals("13 500", ask.toString());
+        assertEquals("\n\t\t13" + "\t500", ask.toString());
     }
 }
