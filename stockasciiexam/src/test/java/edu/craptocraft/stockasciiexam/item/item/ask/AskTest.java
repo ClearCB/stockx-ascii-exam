@@ -1,9 +1,11 @@
-package edu.craptocraft.stockasciiexam.domain.ask;
+package edu.craptocraft.stockasciiexam.item.item.ask;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
+
+import edu.craptocraft.stockasciiexam.item.ask.Ask;
 
 public class AskTest {
     

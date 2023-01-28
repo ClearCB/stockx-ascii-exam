@@ -1,4 +1,4 @@
-package edu.craptocraft.stockasciiexam.domain.sneaker;
+package edu.craptocraft.stockasciiexam.item.offer;
 
 public interface Offer {
 

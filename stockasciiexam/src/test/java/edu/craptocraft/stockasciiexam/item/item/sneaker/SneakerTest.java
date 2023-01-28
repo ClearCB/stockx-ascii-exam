@@ -1,4 +1,4 @@
-package edu.craptocraft.stockasciiexam.domain.sneaker;
+package edu.craptocraft.stockasciiexam.item.item.sneaker;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -6,7 +6,8 @@ import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
 
-import edu.craptocraft.stockasciiexam.domain.bid.Bid;
+import edu.craptocraft.stockasciiexam.item.bid.*;
+import edu.craptocraft.stockasciiexam.item.sneaker.Sneaker;
 
 public class SneakerTest {
     

@@ -1,6 +1,8 @@
-package edu.craptocraft.stockasciiexam.domain.sneaker;
+package edu.craptocraft.stockasciiexam.item.item;
 
 import java.util.List;
+
+import edu.craptocraft.stockasciiexam.item.offer.Offer;
 
 public interface Item {
     

@@ -1,6 +1,6 @@
-package edu.craptocraft.stockasciiexam.domain.bid;
+package edu.craptocraft.stockasciiexam.item.bid;
 
-import edu.craptocraft.stockasciiexam.domain.sneaker.Offer;
+import edu.craptocraft.stockasciiexam.item.offer.*;;
 
 public class Bid implements Offer{
     String size;

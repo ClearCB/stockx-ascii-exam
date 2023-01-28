@@ -1,8 +1,9 @@
 package edu.craptocraft.stockasciiexam;
 
-import edu.craptocraft.stockasciiexam.domain.sneaker.*;
-import edu.craptocraft.stockasciiexam.domain.bid.*;
-import edu.craptocraft.stockasciiexam.domain.ask.*;
+import edu.craptocraft.stockasciiexam.item.ask.*;
+import edu.craptocraft.stockasciiexam.item.bid.*;
+import edu.craptocraft.stockasciiexam.item.item.*;
+import edu.craptocraft.stockasciiexam.item.sneaker.*;
 /**
  * StockX nació en Detroit, y allí siguen haciendo
  * las cosas a la manera tradicional, 
@@ -69,9 +70,9 @@ import edu.craptocraft.stockasciiexam.domain.ask.*;
 //          * offers de la zapatilla. 
 //          */
 
-        Criteria bids = new Bids();
-        System.out.println("\n\t\t All BIDS");
-        bids.checkCriteria(sneaker).forEach(System.out::print);
+        // Criteria bids = new Bids();
+        // System.out.println("\n\t\t All BIDS");
+        // bids.checkCriteria(sneaker).forEach(System.out::print);
 
         /**
 //          * Crea el filtro "Asks" que filtra
