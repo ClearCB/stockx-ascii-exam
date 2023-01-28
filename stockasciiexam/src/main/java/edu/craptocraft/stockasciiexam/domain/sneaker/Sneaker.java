@@ -15,6 +15,7 @@ public class Sneaker implements Item{
     public Sneaker(String style, String name){
         this.style=style;
         this.name=name;
+        this.offers=new ArrayList<Offer>();
 
     }
 
@@ -56,6 +57,7 @@ public class Sneaker implements Item{
 
     @Override
     public void add(Offer offer){
+        this.offers().add(offer);
     }
 
     @Override
