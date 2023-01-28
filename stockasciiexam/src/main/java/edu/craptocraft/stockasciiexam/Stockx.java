@@ -1,9 +1,6 @@
 package edu.craptocraft.stockasciiexam;
 
-import edu.craptocraft.stockasciiexam.item.ask.*;
-import edu.craptocraft.stockasciiexam.item.bid.*;
-import edu.craptocraft.stockasciiexam.item.item.*;
-import edu.craptocraft.stockasciiexam.item.sneaker.*;
+import edu.craptocraft.stockasciiexam.item.*;
 /**
  * StockX nació en Detroit, y allí siguen haciendo
  * las cosas a la manera tradicional, 

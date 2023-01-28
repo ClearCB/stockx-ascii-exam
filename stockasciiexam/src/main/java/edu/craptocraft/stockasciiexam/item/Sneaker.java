@@ -3,8 +3,6 @@ package edu.craptocraft.stockasciiexam.item;
 import java.util.ArrayList;
 import java.util.List;
 
-import edu.craptocraft.stockasciiexam.item.Item;
-import edu.craptocraft.stockasciiexam.item.Offer;
 
 public class Sneaker implements Item{
     private String style;

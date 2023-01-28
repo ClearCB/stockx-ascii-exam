@@ -1,4 +1,4 @@
-package edu.craptocraft.stockasciiexam.item.offer;
+package edu.craptocraft.stockasciiexam.item;
 
 public interface Offer {
 
