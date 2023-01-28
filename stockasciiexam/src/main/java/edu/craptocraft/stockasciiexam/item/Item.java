@@ -1,8 +1,7 @@
-package edu.craptocraft.stockasciiexam.item.item;
+package edu.craptocraft.stockasciiexam.item;
 
 import java.util.List;
 
-import edu.craptocraft.stockasciiexam.item.offer.Offer;
 
 public interface Item {
     

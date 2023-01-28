@@ -1,4 +1,4 @@
-package edu.craptocraft.stockasciiexam.item.item.bid;
+package edu.craptocraft.stockasciiexam.item;
 
 
 import static org.junit.Assert.assertEquals;
@@ -6,7 +6,6 @@ import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
 
-import edu.craptocraft.stockasciiexam.item.bid.Bid;
 
 
 public class BidTest {

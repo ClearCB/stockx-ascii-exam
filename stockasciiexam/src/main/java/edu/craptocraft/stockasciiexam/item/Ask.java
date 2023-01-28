@@ -1,6 +1,4 @@
-package edu.craptocraft.stockasciiexam.item.ask;
-
-import edu.craptocraft.stockasciiexam.item.offer.*;
+package edu.craptocraft.stockasciiexam.item;
 
 public class Ask implements Offer{
     String size;
