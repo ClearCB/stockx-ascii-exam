@@ -2,6 +2,7 @@ package edu.craptocraft.stockasciiexam;
 
 import edu.craptocraft.stockasciiexam.domain.sneaker.*;
 import edu.craptocraft.stockasciiexam.domain.bid.*;
+import edu.craptocraft.stockasciiexam.domain.ask.*;
 /**
  * StockX nació en Detroit, y allí siguen haciendo
  * las cosas a la manera tradicional, 
@@ -55,12 +56,12 @@ import edu.craptocraft.stockasciiexam.domain.bid.*;
 //          * en sus offers.
 //          */
 
-        // Ask ask = new Ask("13", 288);
-        // sneaker.add(ask);
-        // sneaker.add(new Ask("6", 600));
-        // sneaker.add(new Ask("9.5", 333));
-        // sneaker.add(new Ask("9.5", 340));
-        // sneaker.add(new Ask("13", 330));
+        Ask ask = new Ask("13", 288);
+        sneaker.add(ask);
+        sneaker.add(new Ask("6", 600));
+        sneaker.add(new Ask("9.5", 333));
+        sneaker.add(new Ask("9.5", 340));
+        sneaker.add(new Ask("13", 330));
 
 //         /**
 //          * Crear el filtro "Bids" que filtra
@@ -68,11 +69,11 @@ import edu.craptocraft.stockasciiexam.domain.bid.*;
 //          * offers de la zapatilla. 
 //          */
 
-//         Criteria bids = new Bids();
-//         System.out.println("\n\t\t All BIDS");
-//         bids.checkCriteria(sneaker).forEach(System.out::print);
+        Criteria bids = new Bids();
+        System.out.println("\n\t\t All BIDS");
+        bids.checkCriteria(sneaker).forEach(System.out::print);
 
-//         /**
+        /**
 //          * Crea el filtro "Asks" que filtra
 //          * solo las asks de entre las
 //          * offers de la zapatilla. 
