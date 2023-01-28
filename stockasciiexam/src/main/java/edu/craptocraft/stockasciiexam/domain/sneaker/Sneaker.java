@@ -1,12 +1,15 @@
 package edu.craptocraft.stockasciiexam.domain.sneaker;
 
+import java.util.ArrayList;
+import java.util.List;
 
-public class Sneaker {
-    public String style;
-    public String name;
+public class Sneaker implements Item{
+    private String style;
+    private String name;
     private int sale;
     private int ask;
     private int bid;
+    private List<Offer> offers;
     
 
     public Sneaker(String style, String name){
@@ -25,38 +28,46 @@ public class Sneaker {
     }
 
 
-    private int getSale() {
+    public int getSale() {
         return this.sale;
     }
 
 
-    private int getAsk() {
+    public int getAsk() {
         return this.ask;
     }
 
 
-    private int getBid() {
+    public int getBid() {
         return this.bid;
     }
 
-    private void setSale(int sale) {
+    public void setSale(int sale) {
         this.sale = sale;
     }
 
-    private void setAsk(int ask) {
+    public void setAsk(int ask) {
         this.ask = ask;
     }
 
-    private void setBid(int bid) {
+    public void setBid(int bid) {
         this.bid = bid;
     }
 
+    @Override
+    public void add(Offer offer){
+    }
+
+    @Override
+    public List<Offer> offers(){
+        return this.offers;
+    }
 
     @Override
     public String toString(){
         StringBuilder informationSneaker = new StringBuilder();
-        informationSneaker.append("The sneaker sytle is: " + this.getStyle());
-        informationSneaker.append("\nThe sneaker name is: " + this.getName());
+        informationSneaker.append(this.getName());
+        informationSneaker.append("\n" + "\t\t" +this.getStyle());
 
         return informationSneaker.toString();
     }

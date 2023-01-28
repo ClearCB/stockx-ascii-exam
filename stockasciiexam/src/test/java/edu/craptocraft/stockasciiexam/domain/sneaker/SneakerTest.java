@@ -11,7 +11,18 @@ public class SneakerTest {
     public void constructorSneakerTest(){
         Sneaker sneaker = new Sneaker("Sneaker style", "Sneaker name");
         assertNotNull(sneaker);
-        assertEquals("The sneaker sytle is: Sneaker style\nThe sneaker name is: Sneaker name", sneaker.toString());
+        assertEquals("Sneaker name\n\t\tSneaker style", sneaker.toString());
 
     }
+
+    // @Test
+    // public void interfaceItemTest(){
+    //     Sneaker sneaker = new Sneaker("Sneaker style", "Sneaker name");
+    //     sneaker.add(null);
+    // }
+
+    // @Test
+    // public void interfaceOfferTest(){
+
+    // }
 }
