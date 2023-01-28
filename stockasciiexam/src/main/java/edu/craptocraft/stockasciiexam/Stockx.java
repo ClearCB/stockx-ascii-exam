@@ -55,12 +55,12 @@ import edu.craptocraft.stockasciiexam.domain.bid.*;
 //          * en sus offers.
 //          */
 
-        Ask ask = new Ask("13", 288);
-        sneaker.add(ask);
-        sneaker.add(new Ask("6", 600));
-        sneaker.add(new Ask("9.5", 333));
-        sneaker.add(new Ask("9.5", 340));
-        sneaker.add(new Ask("13", 330));
+        // Ask ask = new Ask("13", 288);
+        // sneaker.add(ask);
+        // sneaker.add(new Ask("6", 600));
+        // sneaker.add(new Ask("9.5", 333));
+        // sneaker.add(new Ask("9.5", 340));
+        // sneaker.add(new Ask("13", 330));
 
 //         /**
 //          * Crear el filtro "Bids" que filtra

@@ -3,7 +3,6 @@ package edu.craptocraft.stockasciiexam.domain.sneaker;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
-import java.util.Formatter.BigDecimalLayoutForm;
 
 import org.junit.Test;
 
