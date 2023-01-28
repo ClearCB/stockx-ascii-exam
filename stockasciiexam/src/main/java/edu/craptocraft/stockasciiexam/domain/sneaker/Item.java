@@ -1,20 +1,23 @@
 package edu.craptocraft.stockasciiexam.domain.sneaker;
 
+import java.util.List;
+
 public interface Item {
     
-    public String getStyle();
+    int getBid();
+    
+    int getAsk();
+    
+    int getSale();
 
-    public String getName();
+    void add(Offer offer);
+    
+    List<Offer> offers();
 
-    private int getSale();
-
-    private int getAsk();
-
-    private int getBid();
-
-    private void setSale(int sale);
-
-    private void setAsk(int ask);
-
-    private void setBid(int bid);
+    void setBid(int bid);
+    
+    void setAsk(int ask);
+    
+    void setSale(int sale);
+    
 }
