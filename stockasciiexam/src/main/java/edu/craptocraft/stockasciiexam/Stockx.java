@@ -1,6 +1,7 @@
 package edu.craptocraft.stockasciiexam;
 
 import edu.craptocraft.stockasciiexam.item.*;
+import edu.craptocraft.stockasciiexam.criteria.*;
 /**
  * StockX nació en Detroit, y allí siguen haciendo
  * las cosas a la manera tradicional, 
@@ -67,9 +68,9 @@ import edu.craptocraft.stockasciiexam.item.*;
 //          * offers de la zapatilla. 
 //          */
 
-        // Criteria bids = new Bids();
-        // System.out.println("\n\t\t All BIDS");
-        // bids.checkCriteria(sneaker).forEach(System.out::print);
+        Criteria bids = new Bids();
+        System.out.println("\n\t\t All BIDS");
+        bids.checkCriteria(sneaker).forEach(System.out::print);
 
         /**
 //          * Crea el filtro "Asks" que filtra

@@ -14,6 +14,6 @@ public class BidTest {
     public void constructorBid(){
         Bid bid = new Bid("13",500);
         assertNotNull(bid);
-        assertEquals("13 500", bid.toString());
+        assertEquals("\n\t\t13" + "\t500", bid.toString());
     }
 }

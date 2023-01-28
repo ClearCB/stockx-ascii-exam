@@ -10,14 +10,6 @@ public class Bid implements Offer{
         this.bidValue = bid;
     }
 
-    public String getSize() {
-        return this.size;
-    }
-
-    public int getBid() {
-        return this.bidValue;
-    }
-
     @Override
     public String size() {
         return null;
@@ -37,8 +29,8 @@ public class Bid implements Offer{
     @Override
     public String toString() {
         StringBuilder informationBid = new StringBuilder();
-        informationBid.append(this.getSize());
-        informationBid.append(" "+this.getBid());
+        informationBid.append("\n\t\t" + this.size);
+        informationBid.append("\t"+this.bidValue);
 
         return informationBid.toString();
     }
