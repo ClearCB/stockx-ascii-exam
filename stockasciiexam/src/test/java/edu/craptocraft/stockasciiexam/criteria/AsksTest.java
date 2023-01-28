@@ -10,12 +10,12 @@ import edu.craptocraft.stockasciiexam.item.Sale;
 import edu.craptocraft.stockasciiexam.item.Item;
 import edu.craptocraft.stockasciiexam.item.Sneaker;
 
-public class BidsTest {
+public class AsksTest {
     
     @Test
-    public void bidsCriteriaTest(){
+    public void asksCriteriaTest(){
  
-        Bids bids = new Bids();
+        Asks asks = new Asks();
         Item sneaker = new Sneaker("555088-105", "Jordan 1 Retro High Dark Mocha");
 
         sneaker.add(new Ask("13", 288));
@@ -25,6 +25,6 @@ public class BidsTest {
         sneaker.add(new Sale("6", 200));
         sneaker.add(new Sale("9.5", 479));
 
-        assertEquals(2,bids.checkCriteria(sneaker).size());
+        assertEquals(2,asks.checkCriteria(sneaker).size());
     }
 }

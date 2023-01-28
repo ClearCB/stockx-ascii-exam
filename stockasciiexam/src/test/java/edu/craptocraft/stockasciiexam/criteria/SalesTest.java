@@ -6,16 +6,16 @@ import org.junit.Test;
 
 import edu.craptocraft.stockasciiexam.item.Ask;
 import edu.craptocraft.stockasciiexam.item.Bid;
-import edu.craptocraft.stockasciiexam.item.Sale;
 import edu.craptocraft.stockasciiexam.item.Item;
+import edu.craptocraft.stockasciiexam.item.Sale;
 import edu.craptocraft.stockasciiexam.item.Sneaker;
 
-public class BidsTest {
+public class SalesTest {
     
     @Test
-    public void bidsCriteriaTest(){
+    public void salesCriteriaTest(){
  
-        Bids bids = new Bids();
+        Sales sales = new Sales();
         Item sneaker = new Sneaker("555088-105", "Jordan 1 Retro High Dark Mocha");
 
         sneaker.add(new Ask("13", 288));
@@ -25,6 +25,6 @@ public class BidsTest {
         sneaker.add(new Sale("6", 200));
         sneaker.add(new Sale("9.5", 479));
 
-        assertEquals(2,bids.checkCriteria(sneaker).size());
+        assertEquals(2,sales.checkCriteria(sneaker).size());
     }
 }

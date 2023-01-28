@@ -78,9 +78,9 @@ import edu.craptocraft.stockasciiexam.criteria.*;
 //          * offers de la zapatilla. 
 //          */
 
-//         Criteria asks = new Asks();
-//         System.out.println("\n\t\t All ASKS");
-//         asks.checkCriteria(sneaker).forEach(System.out::print);
+        Criteria asks = new Asks();
+        System.out.println("\n\t\t All ASKS");
+        asks.checkCriteria(sneaker).forEach(System.out::print);
 
 //         /**
 //          * Muestra la bid maxima
@@ -126,12 +126,12 @@ import edu.craptocraft.stockasciiexam.criteria.*;
 //          * a mas reciente.
 //          */
 
-//         Sale sale = new Sale("6", 356);
-//         sneaker.add(sale);
-//         sneaker.add(new Sale("9.5", 352));
-//         sneaker.add(new Sale("9.5", 404));
-//         sneaker.add(new Sale("13", 360));
-//         sneaker.add(new Sale("13", 372));
+        Sale sale = new Sale("6", 356);
+        sneaker.add(sale);
+        sneaker.add(new Sale("9.5", 352));
+        sneaker.add(new Sale("9.5", 404));
+        sneaker.add(new Sale("13", 360));
+        sneaker.add(new Sale("13", 372));
 
 //         /**
 //          * Crear el filtro "Sales" que filtra
@@ -139,9 +139,9 @@ import edu.craptocraft.stockasciiexam.criteria.*;
 //          * offers de la zapatilla.
 //          */
 
-//         Criteria sales = new Sales();
-//         System.out.println("\n\t\t All SALES");
-//         sales.checkCriteria(sneaker).forEach(System.out::print);
+        Criteria sales = new Sales();
+        System.out.println("\n\t\t All SALES");
+        sales.checkCriteria(sneaker).forEach(System.out::print);
         
 //         /**
 //          * Crea un filtro que devuelva
