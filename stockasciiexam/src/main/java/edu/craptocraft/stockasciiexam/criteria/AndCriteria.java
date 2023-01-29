@@ -7,8 +7,8 @@ import edu.craptocraft.stockasciiexam.item.Item;
 import edu.craptocraft.stockasciiexam.item.Offer;
 
 public class AndCriteria implements Criteria{
-    Criteria criteria;
-    Criteria otherCriteria;
+    private Criteria criteria;
+    private Criteria otherCriteria;
 
     public AndCriteria(Criteria criteria, Criteria otherCriteria){
         this.criteria = criteria;
