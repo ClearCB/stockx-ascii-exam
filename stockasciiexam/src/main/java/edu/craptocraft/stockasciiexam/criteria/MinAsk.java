@@ -12,21 +12,21 @@ public class MinAsk implements Criteria {
 
     @Override
     public List<Offer> checkCriteria(Item item) {
-        List<Offer> asksFilter = new ArrayList<Offer>();
+        List<Offer> minAskFilter = new ArrayList<Offer>();
 
         for (Offer offer: item.offers()){
             
-            if ( (offer instanceof Ask) && (asksFilter.isEmpty()) ){
-                asksFilter.add(offer);
+            if ( (offer instanceof Ask) && (minAskFilter.isEmpty()) ){
+                minAskFilter.add(offer);
                 continue;
             }
 
-            if ( (offer instanceof Ask) && (offer.value() < asksFilter.get(0).value()) ){
-                asksFilter.clear();
-                asksFilter.add(offer);
+            if ( (offer instanceof Ask) && (offer.value() < minAskFilter.get(0).value()) ){
+                minAskFilter.clear();
+                minAskFilter.add(offer);
             }
         }
         
-        return asksFilter;
+        return minAskFilter;
     }
 }

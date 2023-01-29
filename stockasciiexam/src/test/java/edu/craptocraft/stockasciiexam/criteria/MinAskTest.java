@@ -6,9 +6,11 @@ import org.junit.Test;
 
 import edu.craptocraft.stockasciiexam.item.Ask;
 import edu.craptocraft.stockasciiexam.item.Bid;
-import edu.craptocraft.stockasciiexam.item.Sale;
 import edu.craptocraft.stockasciiexam.item.Item;
+import edu.craptocraft.stockasciiexam.item.Sale;
 import edu.craptocraft.stockasciiexam.item.Sneaker;
+
+
 
 public class MinAskTest {
     

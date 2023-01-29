@@ -116,10 +116,10 @@ import edu.craptocraft.stockasciiexam.criteria.*;
 //          * ask de sneaker.
 //          */
 
-//         Criteria minAsk = new MinAsk();
-//         List<Offer> minimum = minAsk.checkCriteria(sneaker);
-//         sneaker.setAsk(minimum.isEmpty()? 0 : minimum.get(0).value());
-//         System.out.println(Stockx.draw(sneaker));
+        Criteria minAsk = new MinAsk();
+        List<Offer> minimum = minAsk.checkCriteria(sneaker);
+        sneaker.setAsk(minimum.isEmpty()? 0 : minimum.get(0).value());
+        System.out.println(Stockx.draw(sneaker));
 
 //         /**
 //          * Añade ventas (sales) de 
@@ -153,11 +153,11 @@ import edu.craptocraft.stockasciiexam.criteria.*;
 //          * en sneaker).
 //          */
         
-//         Criteria lastSale = new LastSale();
+        Criteria lastSale = new LastSale();
         
-//         List<Offer> actualSale = lastSale.checkCriteria(sneaker);
-//         sneaker.setSale(actualSale.isEmpty()? 0 : actualSale.get(0).value());
-//         System.out.println(Stockx.draw(sneaker));
+        List<Offer> actualSale = lastSale.checkCriteria(sneaker);
+        sneaker.setSale(actualSale.isEmpty()? 0 : actualSale.get(0).value());
+        System.out.println(Stockx.draw(sneaker));
 
 //         /**
 //          * Mostrar info de la zapatilla 
