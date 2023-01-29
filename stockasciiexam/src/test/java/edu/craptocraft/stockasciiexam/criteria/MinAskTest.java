@@ -25,11 +25,11 @@ public class MinAskTest {
         sneaker.add(new Sale("6", 200));
         sneaker.add(new Sale("9.5", 479));
 
-        assertEquals(288,minAsk.checkCriteria(sneaker));
+        assertEquals(288,minAsk.checkCriteria(sneaker).get(0).value());
 
         sneaker.add(new Ask("13", 100));
         sneaker.add(new Ask("13", 150));
-        assertEquals(100,minAsk.checkCriteria(sneaker));
+        assertEquals(100,minAsk.checkCriteria(sneaker).get(0).value());
         
     }
 }

@@ -26,11 +26,12 @@ public class MaxBidTest {
         sneaker.add(new Sale("9.5", 479));
 
         
-        assertEquals(479,maxBid.checkCriteria(sneaker));
+        assertEquals(479,maxBid.checkCriteria(sneaker).get(0).value());
         
         sneaker.add(new Bid("6", 550));
         sneaker.add(new Bid("9.5", 600));
-        assertEquals(600,maxBid.checkCriteria(sneaker));
+
+        assertEquals(600,maxBid.checkCriteria(sneaker).get(0).value());
 
     }
 }

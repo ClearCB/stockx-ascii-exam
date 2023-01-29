@@ -25,11 +25,11 @@ public class LastSaleTest {
         sneaker.add(new Sale("6", 200));
         sneaker.add(new Sale("9.5", 479));
 
-        assertEquals(479,lastSale.checkCriteria(sneaker));
+        assertEquals(479,lastSale.checkCriteria(sneaker).get(0).value());
 
         sneaker.add(new Sale("9.5", 200));
         sneaker.add(new Sale("9.5", 100));
-        assertEquals(100,lastSale.checkCriteria(sneaker));
+        assertEquals(100,lastSale.checkCriteria(sneaker).get(0).value());
 
     }
 }
