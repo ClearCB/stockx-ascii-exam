@@ -13,7 +13,7 @@ import edu.craptocraft.stockasciiexam.item.Sneaker;
 public class MaxBidTest {
     
     @Test
-    public void bidsCriteriaTest(){
+    public void maxBidCriteriaTest(){
  
         MaxBid maxBid = new MaxBid();
         Item sneaker = new Sneaker("555088-105", "Jordan 1 Retro High Dark Mocha");

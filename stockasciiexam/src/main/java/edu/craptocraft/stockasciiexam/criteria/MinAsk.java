@@ -7,18 +7,26 @@ import edu.craptocraft.stockasciiexam.item.Ask;
 import edu.craptocraft.stockasciiexam.item.Item;
 import edu.craptocraft.stockasciiexam.item.Offer;
 
+
 public class MinAsk implements Criteria {
 
     @Override
     public List<Offer> checkCriteria(Item item) {
         List<Offer> asksFilter = new ArrayList<Offer>();
-        
-        for (Offer offer: item.offers()){
 
-            if (offer instanceof Ask){
+        for (Offer offer: item.offers()){
+            
+            if ( (offer instanceof Ask) && (asksFilter.isEmpty()) ){
+                asksFilter.add(offer);
+                continue;
+            }
+
+            if ( (offer instanceof Ask) && (offer.value() < asksFilter.get(0).value()) ){
+                asksFilter.clear();
                 asksFilter.add(offer);
             }
         }
+        
         return asksFilter;
     }
 }

@@ -13,7 +13,7 @@ import edu.craptocraft.stockasciiexam.item.Sneaker;
 public class LastSaleTest {
     
     @Test
-    public void bidsCriteriaTest(){
+    public void lastSaleCriteriaTest(){
  
         LastSale lastSale = new LastSale();
         Item sneaker = new Sneaker("555088-105", "Jordan 1 Retro High Dark Mocha");

@@ -22,3 +22,4 @@ public class Asks implements Criteria {
         return asksFilter;
     }
 }
+

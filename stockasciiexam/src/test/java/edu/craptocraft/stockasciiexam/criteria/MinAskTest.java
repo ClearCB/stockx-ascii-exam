@@ -13,7 +13,7 @@ import edu.craptocraft.stockasciiexam.item.Sneaker;
 public class MinAskTest {
     
     @Test
-    public void bidsCriteriaTest(){
+    public void minAskCriteriaTest(){
  
         MinAsk minAsk = new MinAsk();
         Item sneaker = new Sneaker("555088-105", "Jordan 1 Retro High Dark Mocha");

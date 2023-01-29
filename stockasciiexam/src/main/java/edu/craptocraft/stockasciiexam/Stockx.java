@@ -1,6 +1,9 @@
 package edu.craptocraft.stockasciiexam;
 
 import edu.craptocraft.stockasciiexam.item.*;
+
+import java.util.List;
+
 import edu.craptocraft.stockasciiexam.criteria.*;
 /**
  * StockX nació en Detroit, y allí siguen haciendo
@@ -95,10 +98,10 @@ import edu.craptocraft.stockasciiexam.criteria.*;
 //          * propiedad bid de sneaker.
 //          */
 
-//         Criteria maxBid = new MaxBid();
-//         List<Offer> maximum = maxBid.checkCriteria(sneaker);
-//         sneaker.setBid(maximum.isEmpty()? 0 : maximum.get(0).value());
-//         System.out.println(Stockx.draw(sneaker));
+        Criteria maxBid = new MaxBid();
+        List<Offer> maximum = maxBid.checkCriteria(sneaker);
+        sneaker.setBid(maximum.isEmpty()? 0 : maximum.get(0).value());
+        System.out.println(Stockx.draw(sneaker));
 
 //         /**
 //          * Muestra la ask minima

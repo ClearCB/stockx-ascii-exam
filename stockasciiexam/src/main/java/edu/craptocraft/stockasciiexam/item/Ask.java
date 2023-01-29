@@ -9,22 +9,14 @@ public class Ask implements Offer{
         this.askValue = ask;
     }
 
-    public String getSize() {
-        return this.size;
-    }
-
-    public int getAsk() {
-        return this.askValue;
-    }
-
     @Override
     public String size() {
-        return null;
+        return this.size;
     }
 
     @Override
     public int value() {
-        return 0;
+        return this.askValue;
     }
 
     @Override
