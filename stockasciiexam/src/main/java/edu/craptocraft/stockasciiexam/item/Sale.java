@@ -12,12 +12,12 @@ public class Sale implements Offer{
 
     @Override
     public String size() {
-        return null;
+        return this.size;
     }
 
     @Override
     public int value() {
-        return 0;
+        return this.saleValue;
     }
 
     @Override
