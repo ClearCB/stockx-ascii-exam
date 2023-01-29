@@ -29,7 +29,7 @@ public class MaxTest {
         sneaker.add(new Sale("9.5", 600));
 
         // To this test, we could also compare the toString to compare if the one tht is added is the correct one.
-        // Max max = new Max(size, sales);
-        // assertEquals(1,max.checkCriteria(sneaker).size());
+        Max max = new Max(size, sales);
+        assertEquals(1,max.checkCriteria(sneaker).size());
     }
 }

@@ -17,24 +17,24 @@ public class Min implements Criteria {
 
     @Override
     public List<Offer> checkCriteria(Item item) {
-        List<Offer> maxBothFilters = new ArrayList<Offer>();
+        List<Offer> minBothFilters = new ArrayList<Offer>();
 
         for(Offer offer: this.criteria.checkCriteria(item) ){
 
             for(Offer otherOffer: this.otherCriteria.checkCriteria(item)){
 
-                    if ( (offer.equals(otherOffer)) && (maxBothFilters.isEmpty()) ){
-                        maxBothFilters.add(offer);
+                    if ( (offer.equals(otherOffer)) && (minBothFilters.isEmpty()) ){
+                        minBothFilters.add(offer);
                         continue;
                     }
         
-                    if ( (offer.equals(otherOffer)) && (offer.value() < maxBothFilters.get(0).value()) ){
-                        maxBothFilters.clear();
-                        maxBothFilters.add(offer);
+                    if ( (offer.equals(otherOffer)) && (offer.value() < minBothFilters.get(0).value()) ){
+                        minBothFilters.clear();
+                        minBothFilters.add(offer);
                     }
             }
         }
-        return maxBothFilters;
+        return minBothFilters;
         
     }
 

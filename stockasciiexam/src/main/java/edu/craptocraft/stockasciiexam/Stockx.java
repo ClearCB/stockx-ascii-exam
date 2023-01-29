@@ -203,10 +203,10 @@ import edu.craptocraft.stockasciiexam.criteria.*;
 //          * de una talla.
 //          */
 
-        // Criteria sizeMaxBid = new MaxTest(size, bids);
-        // List<Offer> sizeBid = sizeMaxBid.checkCriteria(sneaker);
-        // sneaker.setBid(sizeBid.isEmpty()? 0 : sizeBid.get(0).value());
-        // System.out.println("\n\t\t MAX BID 9.5 US: " + sneaker.getBid());
+        Criteria sizeMaxBid = new Max(size, bids);
+        List<Offer> sizeBid = sizeMaxBid.checkCriteria(sneaker);
+        sneaker.setBid(sizeBid.isEmpty()? 0 : sizeBid.get(0).value());
+        System.out.println("\n\t\t MAX BID 9.5 US: " + sneaker.getBid());
 
 //         /**
 //          * Crea un filtro Min(size, asks)
@@ -227,7 +227,7 @@ import edu.craptocraft.stockasciiexam.criteria.*;
 //          * - maxima bid
 //          */
 
-//         System.out.println(Stockx.draw(sneaker));   
+        System.out.println(Stockx.draw(sneaker));   
 
 //         // mostrar las listas ordenadas
         
