@@ -174,18 +174,18 @@ import edu.craptocraft.stockasciiexam.criteria.*;
 //          * un AND de los filtros Size y Sales.
 //          */
 
-//         System.out.println("\n\t\t SALES 9.5 US");
-//         Criteria size = new Size("9.5");
+        System.out.println("\n\t\t SALES 9.5 US");
+        Criteria size = new Size("9.5");
 
-//         sales = new Sales();
-//         Criteria andSizeSales = new AndCriteria(size, sales);
-//         andSizeSales.checkCriteria(sneaker).forEach(System.out::print);
+        sales = new Sales();
+        Criteria andSizeSales = new AndCriteria(size, sales);
+        andSizeSales.checkCriteria(sneaker).forEach(System.out::print);
 
-//         List<Offer> sizeSales = andSizeSales.checkCriteria(sneaker);
-//         sneaker.setSale(sizeSales.isEmpty()? 
-//                             0 : 
-//                             sizeSales.get(sizeSales.size() -1).value());
-//         System.out.println("\n\t\t LAST SALE 9.5 US: " + sneaker.getSale());
+        List<Offer> sizeSales = andSizeSales.checkCriteria(sneaker);
+        sneaker.setSale(sizeSales.isEmpty()? 
+                            0 : 
+                            sizeSales.get(sizeSales.size() -1).value());
+        System.out.println("\n\t\t LAST SALE 9.5 US: " + sneaker.getSale());
 
 //         /**
 //          * Reutiliza el filtro AndCriteria 
