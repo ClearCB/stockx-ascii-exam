@@ -1,8 +1,8 @@
 package edu.craptocraft.stockasciiexam.item;
 
 public class Ask implements Offer{
-    String size;
-    int askValue;
+    private String size;
+    private int askValue;
 
     public Ask(String size, int ask) {
         this.size = size;
@@ -18,12 +18,6 @@ public class Ask implements Offer{
     public int value() {
         return this.askValue;
     }
-
-    @Override
-    public int compareTo(Offer offer) {
-        return 0;
-    }
-
 
     @Override
     public String toString() {

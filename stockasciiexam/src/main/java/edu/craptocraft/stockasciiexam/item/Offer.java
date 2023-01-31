@@ -6,5 +6,4 @@ public interface Offer {
 
     int value();
 
-    int compareTo(Offer offer);
 }

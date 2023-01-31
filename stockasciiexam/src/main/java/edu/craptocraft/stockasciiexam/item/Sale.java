@@ -2,8 +2,8 @@ package edu.craptocraft.stockasciiexam.item;
 
 
 public class Sale implements Offer{
-    String size;
-    int saleValue;
+    private String size;
+    private int saleValue;
 
     public Sale(String size, int sale) {
         this.size = size;
@@ -19,12 +19,6 @@ public class Sale implements Offer{
     public int value() {
         return this.saleValue;
     }
-
-    @Override
-    public int compareTo(Offer offer) {
-        return 0;
-    }
-
 
     @Override
     public String toString() {

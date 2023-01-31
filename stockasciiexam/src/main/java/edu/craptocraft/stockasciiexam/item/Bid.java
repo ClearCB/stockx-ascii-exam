@@ -2,8 +2,8 @@ package edu.craptocraft.stockasciiexam.item;
 
 
 public class Bid implements Offer{
-    String size;
-    int bidValue;
+    private String size;
+    private int bidValue;
 
     public Bid(String size, int bid) {
         this.size = size;
@@ -20,10 +20,6 @@ public class Bid implements Offer{
         return this.bidValue;
     }
 
-    @Override
-    public int compareTo(Offer offer) {
-        return 0;
-    }
 
 
     @Override
