@@ -1,5 +1,7 @@
 # Stockx Ascii Exam
 
+IMPORTANT! All the starting information was provided by my teacher before doing the exam. (UML, userstories, etc.)
+
 This is a repository to solve the exam simulating a platform in which people can interact between each other to buy or sell Jordans. It is expressed meanwhile CLI in ASCII characters.
 
 The problem statment is located at the repository of my teacher: [dfleta](https://github.com/dfleta/stockx-ascii).
