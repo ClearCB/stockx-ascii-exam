@@ -6,6 +6,8 @@ This is a repository to solve the exam simulating a platform in which people can
 
 The problem statment is located at the repository of my teacher: [dfleta](https://github.com/dfleta/stockx-ascii).
 
+The main app is a replica about the web page called [stockX](https://stockx.com/) which consist in a hub in which people can sell their items and get offers. 
+
 ## Design pattern
 
 Since there are a lot of different problems in real life, people have develop and created some models and patters of software architectur in which a problem can be solve efficiently.
